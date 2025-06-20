@@ -47,7 +47,7 @@ export default function StatementOfPurposeForm({ formData, updateFormData, error
                 </p>
             </div>
 
-            {QUESTIONS.map((question, index) => {
+            {QUESTIONS.map((question) => {
                 const fieldValue = formData.statementOfPurpose[question.key as keyof typeof formData.statementOfPurpose]
                 const wordCount = getWordCount(fieldValue)
                 const isOverLimit = wordCount > 300
@@ -56,7 +56,7 @@ export default function StatementOfPurposeForm({ formData, updateFormData, error
                     <div key={question.key} className="">
                         <Input
                             value={fieldValue}
-                            label={`Question ${index + 1}`}
+                            label={question.text}
                             inputType="textarea"
                             required={true}
                             onChange={(e: any) => handleChange(question.key, e.target.value)}
