@@ -1,5 +1,3 @@
-"use client"
-
 import type { FormData, FormErrors } from "../../types/types"
 import Input from "../ui/input"
 

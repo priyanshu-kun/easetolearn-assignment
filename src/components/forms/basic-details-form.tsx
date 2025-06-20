@@ -47,7 +47,6 @@ export default function BasicDetailsForm({ formData, updateFormData, errors }: B
                     <Input
                         id="mobileNumber"
                         label="Mobile"
-                        required={true}
                         value={formData.basicDetails.mobileNumber}
                         onChange={(e) => handleChange("mobileNumber", e.target.value)}
                         placeholder="Enter your mobile number"
@@ -60,7 +59,6 @@ export default function BasicDetailsForm({ formData, updateFormData, errors }: B
                         id="dateOfBirth"
                         type="date"
                         label="Date of Birth"
-                        required={true}
                         value={formData.basicDetails.dateOfBirth}
                         onChange={(e) => handleChange("dateOfBirth", e.target.value)}
                         placeholder="Select your date of birth"

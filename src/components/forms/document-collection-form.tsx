@@ -1,5 +1,3 @@
-"use client"
-
 import { Loader2 } from "lucide-react"
 import type { Documents, FormData, FormErrors } from "../../types/types"
 import Upload from "../ui/upload"
